@@ -347,7 +347,7 @@ label:focus {
   color: #fff;
   font-weight: 700;
 }
-.button-value:disabled{
+.button-value:disabled {
   background-color: red;
 }
 
@@ -476,4 +476,201 @@ label:focus {
 }
 .encendido {
   display: flex;
+}
+@media screen and (max-width: 750px) {
+  header {
+    background-image: url(images/image-hero-mobile.jpg);
+  }
+  li {
+    margin: 0;
+    width: fit-content;
+  }
+
+  .card-monitor {
+    width: 350px;
+    height: 283px;
+  }
+  .bookmark {
+    width: 57px;
+  }
+  .bookmark p {
+    display: none;
+  }
+  .card-monitor {
+    padding: 12px;
+  }
+  .img-master {
+    top: -35px;
+  }
+  #menu-open {
+    display: flex;
+  }
+  .card-monitor p {
+    font-size: 15px;
+    text-align: center;
+    line-height: 20px;
+  }
+
+  .card-monitor h1 {
+    text-align: center;
+  }
+
+  .button-proyect {
+    width: 213px;
+    height: 55px;
+  }
+
+  .content-tip {
+    width: 350px;
+    height: 411px;
+  }
+  .content-numbers {
+    flex-direction: column;
+    width: min-content;
+    text-align: center;
+    gap: 26px;
+  }
+
+  .number {
+    border-right: none;
+    border-bottom: solid 1px var(--color-Dark-gray);
+  }
+  .content-stick {
+    width: 270px;
+  }
+
+  .stick {
+    width: 217px;
+  }
+  .content-cards {
+    width: 350px;
+    padding: 43px 38px 1px 38px;
+  }
+
+  .card-alert {
+    width: 355px;
+    top: -85px;
+    left: 1px;
+    padding-inline: 31px;
+  }
+
+  .card-project {
+    height: 307px;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+
+  .card:last-child {
+    margin-bottom: 50px;
+  }
+  .card-project p {
+    font-size: 14px;
+  }
+  .backed {
+    width: fit-content;
+  }
+
+  .card {
+    height: 370px;
+    border-radius: 12px;
+    gap: 20px;
+    padding: 23px 21px 23px 23px;
+    font-size: 15px;
+  }
+  .title-card {
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .content-btn-card {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .container-sales {
+    width: 350px;
+    padding: 20px;
+    left: 0px;
+  }
+
+  .sponsorship-card {
+    height: 250px;
+    padding: 26px 31px 26px 32px;
+  }
+
+  .sponsorship-card p {
+    padding: 0;
+    text-align: left;
+  }
+  .card-buy-monitor {
+    height: 250px;
+  }
+
+  .card-buy-monitor div {
+    display: inline-block;
+  }
+
+  .close-card {
+    top: 0;
+    right: 0;
+  }
+
+  .title-mohogany {
+    flex-direction: column;
+  }
+
+  .content-nav {
+    display: flex;
+    height: fit-content;
+  }
+
+  header .menu-button button {
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  header nav #menu-close {
+    background: transparent;
+    border: none;
+    position: absolute;
+    outline: none;
+    right: 20px;
+    z-index: 3;
+    cursor: pointer;
+  }
+  header .menu-button {
+    right: 70px;
+  }
+  header nav.open {
+    position: absolute;
+    right: 14%;
+    top: 100px;
+    bottom: 0;
+    width: 395px;
+    background-color: white;
+    padding: 30px;
+    z-index: 1;
+    opacity: 1;
+    height: 230px;
+    border-radius: 15px;
+  }
+  header nav ul {
+    position: absolute;
+    transform: translateY(-50%);
+    color: #000;
+    flex-direction: column;
+    font-weight: 500;
+  }
+
+  /* header nav ul li {
+          margin: 15px 0;
+          font-size: 15px;
+        } */
+
+  header nav {
+    opacity: 0;
+    z-index: -2;
+    transition: all 0.3 ease-in-out;
+  }
 }
